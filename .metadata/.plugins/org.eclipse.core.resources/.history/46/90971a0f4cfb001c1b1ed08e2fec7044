@@ -1,0 +1,32 @@
+package com.example.security.springsecurity.config;
+
+import org.springframework.cglib.proxy.NoOp;
+import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
+import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
+import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.crypto.password.NoOpPasswordEncoder;
+import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.security.web.util.matcher.AndRequestMatcher;
+
+
+
+@EnableWebSecurity
+public class Securityconfig extends WebSecurityConfigurerAdapter {
+
+      @Override
+      protected void configure(AuthenticationManagerBuilder auth) throws Exception {
+    	  
+    	  auth.inMemoryAuthentication()
+    	  .withUser("sathwik").password(getPasswordEncoder().encode("1234")).roles("head");
+    	  .and()
+    	  .withUser("sathwik1").password(getPasswordEncoder().encode("2222")).roles("head1");
+    	  
+      }
+       
+     
+	public PasswordEncoder getPasswordEncoder() {
+		return new BCryptPasswordEncoder();	
+	}
+	
+}

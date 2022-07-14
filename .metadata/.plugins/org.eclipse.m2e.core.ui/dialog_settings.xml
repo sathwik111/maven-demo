@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="MavenProjectImportWizardPage">
+		<list key="rootDirectory">
+			<item value="C:\Users\sathwik\OneDrive\Desktop\spring-configserver\spring-cloud-client"/>
+			<item value="C:\Users\sathwik\OneDrive\Desktop\spring-configserver"/>
+			<item value="C:\Users\sathwik\OneDrive\Desktop\spring-config\spring-cloud-config"/>
+			<item value="C:\Users\sathwik\OneDrive\Desktop\springsecurity"/>
+			<item value="C:\Users\sathwik\OneDrive\Desktop\tcsproject"/>
+			<item value="C:\Users\sathwik\OneDrive\Desktop\assignment"/>
+			<item value="C:\Users\sathwik\eclipse-workspace\assignment"/>
+			<item value="C:\Users\sathwik\eclipse-workspace\springdemo"/>
+			<item value="C:\Users\sathwik\OneDrive\Desktop\mondoDB"/>
+			<item value="C:\Users\sathwik\OneDrive\Desktop\EmployeeManagementSystem"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+</section>

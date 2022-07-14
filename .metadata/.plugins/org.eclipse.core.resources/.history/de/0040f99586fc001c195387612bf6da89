@@ -1,0 +1,28 @@
+package com.wipro.springcloudclient.controller;
+
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.web.bind.annotation.GetMapping;
+
+public class Testcontroller {
+
+	@Value("${my.greetings}")
+	private String greet;
+	
+	
+	@Value("${my.List.values}")
+	private String fruits;
+	
+	
+	@GetMapping("/display")
+	public String displayproperties()
+	{
+		
+		System.out.println("my.greetings"+greet);
+		System.out.println("my.List.values"+fruits);
+		
+		return "see your Console";
+	}
+	
+	
+	
+}
